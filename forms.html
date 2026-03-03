@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+        }
+        form {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+ 
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+}
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #1f75dd;
+    box-shadow: 0 0 5px rgba(31, 117, 221, 0.4);
+}
+form input[type="submit"] {
+    background: linear-gradient(135deg, #1f75dd, #0bcdc3);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+form input[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(3, 55, 197, 0.4);
+}
+#successMessage {
+    display: none;
+    background: rgba(76, 175, 80, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+    </style>
+
+</head>
+<body>
+
+     <header>
+         <h1>Sapphire Bay Resort</h1>
+    <p>Luxury · Nature · Comfort</p>
+
+<section class="button-slab">
+    <div class="cute-nav">
+    <a href="index.html" class="cute-btn"><i>Welcome</i></a>
+    <a href="about.html" class="cute-btn"><i>Our Story</i></a>
+    <a href="contact.html" class="cute-btn"><i>Plan Your Stay</i></a>
+    <a href="tables.html" class="cute-btn"><i>Activities</i></a>
+    <a href="bookings.html" class="cute-btn"><i>Bookings</i></a>
+    <a href="forms.html" class="cute-btn"><i>Reservations</i></a>
+    </div>
+</section>
+         <class id="order-form"> 
+        <h1>Reservations</h1>
+    </class>
+
+    </header>
+   
+    
+    
+
+<main>
+    <class id="order-form2"> 
+        
+    <form action="thankyou.html">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone"><b>Phone Number:</b></label><br>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date"><b>Reservation Date:</b></label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="product"><b>Activities:</b></label>
+        <select id="product" name="product" required>
+            <option value=""><b>Select Activities</b></option>
+            <option value="bioluminescent night kayak tour">Bioluminescent Night Kayak Tour</option>
+            <option value="sunset chill session with live acoustic music">Sunset Chill Session with Live Acoustic Music</option>
+            <option value="full moon glow-swim experience">Full Moon Glow-Swim Experience</option>
+            <option value="beach boogie dance party">Beach Boogie Dance Party</option>
+            <option value="interactive drum circle by the shore">Interactive Drum Circle by the Shore</option>
+            <option value="glow lounge & mixology tasting">Glow Lounge & Mixology Tasting</option>
+            <option value="moonlit yoga by the beach">Moonlit Yoga by the Beach</option>
+            <option value="midnight floating cinema">Midnight Floating Cinema</option>
+            <option value="glow treasure hunt">Glow Treasure Hunt</option>
+            <option value="neon sand art & face painting">Neon Sand Art & Face Painting</option>
+            <option value="jazz under stars">Jazz Under Stars</option>
+        </select>
+
+        <label for="quantity"><b>Number of Guests:</b></label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+       <input type="submit" value="Submit">
+    </form>
+    </class>
+</main>
+</body>
+</html>

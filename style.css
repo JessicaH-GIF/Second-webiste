@@ -1,24 +1,32 @@
 body {
 font-family: Arial, sans-serif;
 
-color: #333;
-
-background-color: #f9f9f9;
-
-background-image: url("download (10).jpg");
-
+  color: #333;
 margin: 0;
+min-height: 100vh;
 
-padding: 0;
+background-image: url('Minimalist Light Blue Phone Wallpaper.jpg');
 
-line-height: 1.6;
+background-size: cover;
+
+background-repeat: no-repeat;
+
+background-position: center;
+
+background-attachment: fixed;
+
+margin:0%;
+
+text-align: center;
+
 }
 
-header {
-background-color: #16a8c2;
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
-color: white;
-
+header { 
 padding: 20px;
 
 text-align: center;
@@ -27,60 +35,99 @@ text-align: center;
 
 header h1 {
 margin: 0;
-}
 
-
-nav a {
-color: white;
-
-text-decoration: none;
-
-margin: 0 10px;
-}
-
-nav a:hover {
-text-decoration: underline;
-}
-
-main {
-padding: 20px;
-
-max-width: 800px;
-
-margin: 0 auto;
 }
 
 
 main img {
 max-width: 100%;
-
-height: auto;
-
-display: block;
-
-margin: 20px 0;
+height: auto; 
+display: flex;
 }
 
 img {
-border-radius: 1000px;color: #944e4e;
-position: center;
+display: block;
+margin: 20px auto;
+border-radius: 20px;
 }
 
 .card img{
     width:100%;
     height:200px;
     object-fit:cover;
-    border-radius: 10px;color: #000;
+    border-radius: 10px;
+    color: #000;
 }
 
 button:hover{
     background: #00008B;
 }
 
-backgroundimg {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
+
+.cute-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
 }
 
+.cute-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #180390;
+  background: linear-gradient(135deg, #1f75dd, #0bcdc3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: center;
+  margin-left: 20px;
+}
+
+.cute-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(3, 55, 197, 0.6);
+}
+
+
+.button-slab {
+  width: fit-content;
+  margin: 30px auto;
+  padding: 10px 20px;
+
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+
+  border-radius: 50px;
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 8px solid #100707;
+            padding: 8px;
+        }
+        th {
+            background-color: dodgerblue;
+            text-align: left;
+        }
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Monospace', monospace;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+table {
+    background-color: #ffffff;
+    color: #100707;
+    font-family: 'Monospace', monospace;
+}
